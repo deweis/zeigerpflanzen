@@ -1,0 +1,2 @@
+# zeigerpflanzen
+Permaculture - Zeigerpflanzen repository
