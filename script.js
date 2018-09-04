@@ -20,9 +20,21 @@ const soil = [
 ];
 
 const plants = [
-  { name: 'Zurückgebogener Amaranth', latin: 'Amaranthus retroflexus', soil: [1, 3] },
-  { name: 'Gemeiner Odermenning', latin: 'Agrimonia eupatoria', soil: [1] },
-  { name: 'Acker-Gauchheil', latin: 'Anagalis arvensis', soil: [15] },
+  { name: 'Zurückgebogener Amaranth',
+    latin: 'Amaranthus retroflexus',
+    soil: [1, 3],
+    img: 'AmaranthusRetroflexus.jpg',
+    imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/2/26/Amaranthus_retroflexus_full1.jpg', },
+  { name: 'Gemeiner Odermenning',
+    latin: 'Agrimonia eupatoria',
+    soil: [1],
+    img: 'AgrimoniaEupatoria.jpg',
+    imgSrc: 'https://de.wikipedia.org/wiki/Gemeiner_Odermennig#/media/File:Agrimonia_eupatoria_04.jpg',},
+  { name: 'Acker-Gauchheil',
+    latin: 'Anagallis arvensis',
+    soil: [15],
+    img: 'AnagallisArvensis.jpg',
+    imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/1/15/AnagallisArvensis.jpg', },
   { name: 'Salz-Aster', latin: 'Aster tripolium', soil: [18] },
   { name: 'Kanadisches Berufskraut', latin: 'Erigeron canadensis', soil: [2] },
   { name: 'Gewöhnliches Greiskraut', latin: 'Senecio vulgaris', soil: [3, 17] },
@@ -74,3 +86,38 @@ const plants = [
   { name: 'Gänseblümchen', latin: 'Bellis perennis', soil: [12, 14] },
   { name: 'Echtes Leinkraut', latin: 'Linaria vulgaris', soil: [12] },
 ];
+
+function showPlants() {
+  const plantsList = document.getElementById('plants-list');
+
+  /* add one card per entry in plants object */
+  for (let i = 0; i < 3; i++) {
+    const card = document.createElement('div');
+    card.setAttribute('class', 'col-md-6 col-lg-4');
+    card.innerHTML = `
+            <div class="card">
+              <img class="card-img-top"
+                   src="img/500x666/${plants[i].img}"
+                   alt="${plants[i].name}">
+              <div class="card-body" id="${plants[i].name}">
+                <h5 class="card-title">${plants[i].name}</h5>
+                <p class="card-text"><em>${plants[i].latin}</em></p>
+              </div>
+            </div>`;
+    plantsList.appendChild(card);
+
+    /* add respective soil conditions accordingly to plant info in
+       plants object soil array */
+    const cardBody = document.getElementById(plants[i].name);
+    for (let j = 0; j < plants[i].soil.length; j++) {
+      const span = document.createElement('span');
+      span.setAttribute('class', 'soil-info');
+
+      // the index is one less than reference in plants object
+      span.innerHTML = `${soil[plants[i].soil[j] - 1].condition}`;
+      cardBody.appendChild(span);
+    }
+  }
+}
+
+showPlants();
