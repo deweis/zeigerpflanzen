@@ -5,6 +5,7 @@
   background: #e9ecef;
   border-radius: 3px;
   color: #616161; /* grey darken-2 */
+  display: inline-block;
   margin: 2px;
   padding: 4px 8px;
 }
