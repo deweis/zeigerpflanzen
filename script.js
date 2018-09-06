@@ -440,13 +440,27 @@ const plants = [
     photographer: '', },
 ];
 
+function filterPlants(soilCondition) {
+  let conditionId = soil.filter(x => x.condition === soilCondition)[0].id;
+  let filteredPlants = plants.filter(x => x.soil.includes(conditionId))
+                             .map(plant => plant.latin);
+
+  document.querySelectorAll('.plant')
+        .forEach(plant => {
+          filteredPlants.includes(plant.id) ? plant.classList.remove('hide') :
+                                              plant.classList.add('hide');
+        });
+  window.scrollTo(0, 0);
+}
+
 function showPlants() {
   const plantsList = document.getElementById('plants-list');
 
   /* add one card per entry in plants object */
   for (let i = 0; i < plants.length; i++) {
     const card = document.createElement('div');
-    card.setAttribute('class', 'col-md-6 col-lg-4');
+    card.setAttribute('class', 'col-md-6 col-lg-4 plant');
+    card.setAttribute('id', `${plants[i].latin}`);
     card.innerHTML = `
             <div class="card">
               <a href="${plants[i].url}" target="_blank"><img class="card-img-top"
@@ -461,11 +475,14 @@ function showPlants() {
     plantsList.appendChild(card);
 
     /* add respective soil conditions accordingly to plant info in
-       plants object soil array */
+       plants object soil condition array */
     const cardBody = document.getElementById(plants[i].name);
     for (let j = 0; j < plants[i].soil.length; j++) {
       const span = document.createElement('span');
       span.setAttribute('class', 'soil-info');
+      span.addEventListener('click', function () {
+        filterPlants(this.innerText);
+      });
 
       // the index is one less than reference in plants object
       span.innerHTML = `${soil[plants[i].soil[j] - 1].condition}`;

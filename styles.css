@@ -5,10 +5,14 @@
   background: #e9ecef;
   border-radius: 3px;
   color: #616161; /* grey darken-2 */
+  cursor: pointer;
   display: inline-block;
   margin: 2px;
   padding: 4px 8px;
 }
 .card-body h6 {
   text-align: right;
+}
+.hide {
+  display: none;
 }
