@@ -459,7 +459,7 @@ function showPlants() {
   /* add one card per entry in plants object */
   for (let i = 0; i < plants.length; i++) {
     const card = document.createElement('div');
-    card.setAttribute('class', 'col-md-6 col-lg-4 plant');
+    card.setAttribute('class', 'plant');
     card.setAttribute('id', `${plants[i].latin}`);
     card.innerHTML = `
             <div class="card">
