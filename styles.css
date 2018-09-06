@@ -11,8 +11,10 @@
   color: #616161; /* grey darken-2 */
   cursor: pointer;
   display: inline-block;
+  min-width: 32%;
   margin: 2px;
   padding: 4px 8px;
+  text-align: center;
 }
 .card-body h6 {
   text-align: right;
