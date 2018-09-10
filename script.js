@@ -1,8 +1,8 @@
-const soil = [
+const soil = [ /* !! Don't change the order of this list !! */
   { id: 1, condition: 'trocken' },
   { id: 2, condition: 'nass' },
-  { id: 3, condition: 'komprimierter Boden' },
-  { id: 4, condition: 'natürlicher/unkultivierter Boden' },
+  { id: 3, condition: 'komprimiert' },
+  { id: 4, condition: 'natürlich/unkultiviert' },
   { id: 5, condition: 'stickstoffarm' },
   { id: 6, condition: 'stickstoffreich' },
   { id: 7, condition: 'kaliumarm' },
@@ -468,7 +468,7 @@ function showPlants() {
                    alt="${plants[i].name}"></a>
               <div class="card-body" id="${plants[i].name}">
                 <h5 class="card-title">${plants[i].name}</h5>
-                <h6><em>${plants[i].latin}</em></h6>
+                <h6 class="card-latin"><em>${plants[i].latin}</em></h6>
                 <p class="card-text">${plants[i].desc}</p>
               </div>
             </div>`;
@@ -477,6 +477,13 @@ function showPlants() {
     /* add respective soil conditions accordingly to plant info in
        plants object soil condition array */
     const cardBody = document.getElementById(plants[i].name);
+
+    const hr = document.createElement('hr');
+    cardBody.appendChild(hr);
+    const soilCondHeader = document.createElement('h6');
+    soilCondHeader.innerHTML = 'Bodenbeschaffenheit:'
+    cardBody.appendChild(soilCondHeader);
+
     for (let j = 0; j < plants[i].soil.length; j++) {
       const span = document.createElement('span');
       span.setAttribute('class', 'soil-info');
