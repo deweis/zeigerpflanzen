@@ -17,6 +17,11 @@
   min-width: 32%;
   padding: 4px 8px;
   text-align: center;
+  transition: 0.8s;
+}
+.soil-info:hover {
+  background: #8d6e63;  /* brown lighten-1 */
+  color: white;
 }
 .card-latin {
   text-align: right;
