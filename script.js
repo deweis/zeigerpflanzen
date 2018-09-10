@@ -1,22 +1,22 @@
 const soil = [ /* !! Don't change the order of this list !! */
-  { id: 1, condition: 'trocken' },
-  { id: 2, condition: 'nass' },
-  { id: 3, condition: 'komprimiert' },
-  { id: 4, condition: 'natürlich/unkultiviert' },
-  { id: 5, condition: 'stickstoffarm' },
-  { id: 6, condition: 'stickstoffreich' },
-  { id: 7, condition: 'kaliumarm' },
-  { id: 8, condition: 'kaliumreich' },
-  { id: 9, condition: 'phosphorarm' },
-  { id: 10, condition: 'phosphorreich' },
-  { id: 11, condition: 'sandig' },
-  { id: 12, condition: 'lehmig' },
-  { id: 13, condition: 'tiefgreifende Mineralschicht' },
-  { id: 14, condition: 'sauer' },
-  { id: 15, condition: 'basisch' },
-  { id: 16, condition: 'mager' },
-  { id: 17, condition: 'nährstoffreich' },
-  { id: 18, condition: 'salzig' },
+  { id: 1, condition: 'trocken', header: 'trockenen Boden', },
+  { id: 2, condition: 'nass', header: 'nassen Boden', },
+  { id: 3, condition: 'komprimiert', header: 'komprimierten Boden', },
+  { id: 4, condition: 'natürlich/unkultiviert', header: 'natürlichen- / unkultivierten Boden', },
+  { id: 5, condition: 'stickstoffarm', header: 'stickstoffarmen Boden', },
+  { id: 6, condition: 'stickstoffreich', header: 'stickstoffreichen Boden', },
+  { id: 7, condition: 'kaliumarm', header: 'kaliumarmen Boden', },
+  { id: 8, condition: 'kaliumreich', header: 'kaliumreichen Boden', },
+  { id: 9, condition: 'phosphorarm', header: 'phosphorarmen Boden', },
+  { id: 10, condition: 'phosphorreich', header: 'phosphorreichen Boden', },
+  { id: 11, condition: 'sandig', header: 'sandigen Boden', },
+  { id: 12, condition: 'lehmig', header: 'lehmigen Boden', },
+  { id: 13, condition: 'tiefgreifende Mineralschicht', header: 'Boden mit tiefgreifender Mineralschicht', },
+  { id: 14, condition: 'sauer', header: 'sauren Boden', },
+  { id: 15, condition: 'basisch', header: 'basischen Boden', },
+  { id: 16, condition: 'mager', header: 'mageren Boden', },
+  { id: 17, condition: 'nährstoffreich', header: 'nährstoffreichen Boden', },
+  { id: 18, condition: 'salzig', header: 'salzigen Boden', },
 ];
 
 const plants = [
@@ -458,6 +458,13 @@ function filterPlants(soilCondition) {
           span.innerText === soilCondition ? span.classList.add('darker') :
                                              span.classList.remove('darker');
         });
+
+  /* Hide the title Jumbotron as not needed anymore - so only the plants are visible */
+  document.getElementById('title').classList.add('hide');
+
+  const headerText = soil.find(x => x.condition === soilCondition).header;
+  document.getElementById('header').innerHTML = `Zeigerpflanzen für ${headerText}`
+  document.getElementById('header').classList.remove('hide')
   window.scrollTo(0, 0);
 }
 
