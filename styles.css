@@ -23,6 +23,9 @@
   background: #8d6e63;  /* brown lighten-1 */
   color: white;
 }
+.darker {
+  filter: brightness(70%);
+}
 .card-latin {
   text-align: right;
 }

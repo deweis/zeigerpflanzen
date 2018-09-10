@@ -445,10 +445,18 @@ function filterPlants(soilCondition) {
   let filteredPlants = plants.filter(x => x.soil.includes(conditionId))
                              .map(plant => plant.latin);
 
+  /* Hide the plants without the respective soil condition */
   document.querySelectorAll('.plant')
         .forEach(plant => {
           filteredPlants.includes(plant.id) ? plant.classList.remove('hide') :
                                               plant.classList.add('hide');
+        });
+
+  /* Darken the background of the selected condition */
+  document.querySelectorAll('.soil-info')
+        .forEach(span => {
+          span.innerText === soilCondition ? span.classList.add('darker') :
+                                             span.classList.remove('darker');
         });
   window.scrollTo(0, 0);
 }
