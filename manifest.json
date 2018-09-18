@@ -1,44 +1,44 @@
 {
   "name": "Permakultur - Zeigerpflanzen",
-  "short_name": "Zeigerpflanzen",
+  "short_name": "Zeiger",
   "icons": [
     {
-      "src": "/img/icons/48x48.png",
+      "src": "/zeigerpflanzen/img/icons/48x48.png",
       "type": "img/png",
       "sizes": "48x48"
     },
     {
-      "src": "/img/icons/96x96.png",
+      "src": "/zeigerpflanzen/img/icons/96x96.png",
       "type": "img/png",
       "sizes": "96x96"
     },
     {
-      "src": "/img/icons/144x144.png",
+      "src": "/zeigerpflanzen/img/icons/144x144.png",
       "type": "img/png",
       "sizes": "144x144"
     },
     {
-      "src": "/img/icons/192x192.png",
+      "src": "/zeigerpflanzen/img/icons/192x192.png",
       "type": "img/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/icons/256x256.png",
+      "src": "/zeigerpflanzen/img/icons/256x256.png",
       "type": "img/png",
       "sizes": "256x256"
     },
     {
-      "src": "/img/icons/384x384.png",
+      "src": "/zeigerpflanzen/img/icons/384x384.png",
       "type": "img/png",
       "sizes": "384x384"
     },
     {
-      "src": "/img/icons/512x512.png",
+      "src": "/zeigerpflanzen/img/icons/512x512.png",
       "type": "img/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/zeigerpflanzen/index.html",
   "scopre": ".",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -46,5 +46,5 @@
   "theme_color": "#d7ccc8",
   "description": "Zeigerpflanzen zur Eruierung der Bodenverhältnisse.",
   "dir": "ltr",
-  "lang": "de-CH"
+  "lang": "de"
 }
