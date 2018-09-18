@@ -2,11 +2,14 @@
   margin-top: 0.8em;
 }
 .navbar {
-  background: #d7ccc8; /* brown lighten-4 */
+  justify-content: center;
+}
+.navbar {
+  background-color: #e9ecef;
   border-radius: 3px;
   font-size: 2rem;
   font-weight: 300;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5rem;
 }
 .display-4 {
   font-size: 2.3rem;
@@ -15,7 +18,8 @@
 .card-columns {
   column-count: 1;
 }
-.soil-info {
+.soil-info,
+.btn-show-all {
   background: #d7ccc8; /* brown lighten-4 */
   border-radius: 3px;
   cursor: pointer;
@@ -26,8 +30,17 @@
   text-align: center;
   transition: 0.8s;
 }
+.btn-parent {
+  margin-bottom: 0.5rem;
+}
+.btn-show-all {
+  display: inline;
+}
+.fa-times {
+  color: #8d6e63; /* brown lighten-1 */
+}
 .soil-info:hover {
-  background: #8d6e63;  /* brown lighten-1 */
+  background: #8d6e63; /* brown lighten-1 */
   color: white;
 }
 .darker {
