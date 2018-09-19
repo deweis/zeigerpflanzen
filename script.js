@@ -1,3 +1,16 @@
+/**
+ * The Service Worker
+ */
+if ('serviceWorker' in navigator) {
+  // Check if the service worker feature is available in the browser in use
+  navigator.serviceWorker.register('/sw.js').then(function() {
+    console.log('Service Worker registered');
+  });
+}
+
+/**
+ * The Plant and soil info objects
+ */
 const soil = [
   /* !! Don't change the order of this list !! */
   { id: 1, condition: 'trocken', header: 'trockenen Boden' },
@@ -656,6 +669,9 @@ const plants = [
   }
 ];
 
+/**
+ * The application section
+ */
 function removePlantFilter() {
   document
     .querySelectorAll('.plant')
