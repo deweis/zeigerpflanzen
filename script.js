@@ -3,7 +3,7 @@
  */
 if ('serviceWorker' in navigator) {
   // Check if the service worker feature is available in the browser in use
-  navigator.serviceWorker.register('/sw.js').then(function() {
+  navigator.serviceWorker.register('/zeigerpflanzen/sw.js').then(function() {
     console.log('Service Worker registered');
   });
 }
