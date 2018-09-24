@@ -1,12 +1,12 @@
 /**
  * The Service Worker
- */
+ 
 if ('serviceWorker' in navigator) {
   // Check if the service worker feature is available in the browser in use
   navigator.serviceWorker.register('/zeigerpflanzen/sw.js').then(function() {
     console.log('Service Worker registered');
   });
-}
+}*/
 
 /**
  * The Plant and soil info objects
@@ -732,7 +732,7 @@ function showPlants() {
     card.innerHTML = `
             <div class="card">
               <a href="${plants[i].url}" target="_blank">
-                <img class="card-img-top" data-src="img/500x500/${
+                <img class="card-img-top lazy" data-src="img/500x500/${
                   plants[i].img
                 }" alt="${plants[i].name}">
               </a>
@@ -766,14 +766,10 @@ function showPlants() {
       cardBody.appendChild(span);
     }
   }
-
-  /* lazyload the images --> Thank you https://davidwalsh.name/lazyload-image-fade */
-  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
-    img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = function() {
-      img.removeAttribute('data-src');
-    };
-  });
 }
 
 showPlants();
+
+const myLazyLoad = new LazyLoad({
+  elements_selector: '.lazy'
+});

@@ -60,14 +60,6 @@
 h1 {
   font-weight: 500;
 }
-img {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-img[data-src] {
-  opacity: 0;
-}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
