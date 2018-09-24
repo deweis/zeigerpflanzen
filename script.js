@@ -731,11 +731,11 @@ function showPlants() {
     card.setAttribute('id', `${plants[i].latin}`);
     card.innerHTML = `
             <div class="card">
-              <a href="${
-                plants[i].url
-              }" target="_blank"><img class="card-img-top"
-                   src="img/500x500/${plants[i].img}"
-                   alt="${plants[i].name}"></a>
+              <a href="${plants[i].url}" target="_blank">
+                <img class="card-img-top" data-src="img/500x500/${
+                  plants[i].img
+                }" alt="${plants[i].name}">
+              </a>
               <div class="card-body" id="${plants[i].name}">
                 <h5 class="card-title">${plants[i].name}</h5>
                 <h6 class="card-latin"><em>${plants[i].latin}</em></h6>
@@ -766,6 +766,14 @@ function showPlants() {
       cardBody.appendChild(span);
     }
   }
+
+  /* lazyload the images --> Thank you https://davidwalsh.name/lazyload-image-fade */
+  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function() {
+      img.removeAttribute('data-src');
+    };
+  });
 }
 
 showPlants();
