@@ -718,6 +718,9 @@ function filterPlants(soilCondition) {
   document.getElementById('btn-show-all').addEventListener('click', function() {
     removePlantFilter();
   });
+
+  document.getElementById('text-search').value = ''; // clear the search
+
   window.scrollTo(0, 0);
 }
 
@@ -766,6 +769,54 @@ function showPlants() {
       cardBody.appendChild(span);
     }
   }
+}
+
+/* The Plant Search */
+
+// Search by Button Click
+document.getElementById('btn-search').addEventListener('click', function() {
+  const searchText = document.getElementById('text-search').value;
+  showSearchResults(searchText);
+});
+
+// Search by pressing the Enter key (by w3schools)
+const searchInput = document.getElementById('text-search');
+
+searchInput.addEventListener('keyup', function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the search button with a click
+    document.getElementById('btn-search').click();
+  }
+});
+
+function showSearchResults(plantName) {
+  removePlantFilter();
+
+  const regExp = new RegExp(plantName, 'gi');
+
+  let filteredPlants = plants
+    .filter(x => regExp.test(x.name))
+    .map(plant => plant.latin);
+
+  /* Hide the plants not matching */
+  document.querySelectorAll('.plant').forEach(plant => {
+    filteredPlants.includes(plant.id)
+      ? plant.classList.remove('hide')
+      : plant.classList.add('hide');
+  });
+
+  /* Show only header title without explanation of indicator plants */
+  document.getElementById('title').classList.add('hide');
+
+  document.getElementById('header').innerHTML = `Zeigerpflanzen`;
+  document.getElementById('header').classList.remove('hide');
+
+  /* Auto-scroll so the lazyload triggers image load */
+  window.scrollTo(0, 1);
+  window.scrollTo(0, 0);
 }
 
 showPlants();
