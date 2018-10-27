@@ -1,6 +1,20 @@
 /**
  * The Service Worker
+ * local - with a different url to register - comment when pubhlishing
+ */
+
+if ('serviceWorker' in navigator) {
+  // Check if the service worker feature is available in the browser in use
+  navigator.serviceWorker.register('/sw.js').then(function() {
+    console.log('Service Worker registered');
+  });
+}
+
+/**
+ * The Service Worker
+ * online - with a different url to register - uncomment when publishing
  
+
 if ('serviceWorker' in navigator) {
   // Check if the service worker feature is available in the browser in use
   navigator.serviceWorker.register('/zeigerpflanzen/sw.js').then(function() {
@@ -721,6 +735,7 @@ function filterPlants(soilCondition) {
 
   document.getElementById('text-search').value = ''; // clear the search
 
+  window.scrollTo(0, 1);
   window.scrollTo(0, 0);
 }
 
