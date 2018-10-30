@@ -837,7 +837,8 @@ function showSearchResults(plantName) {
 showPlants();
 
 const myLazyLoad = new LazyLoad({
-  elements_selector: '.lazy'
+  elements_selector: '.lazy',
+  to_webp: true
 });
 
 window.scrollTo(0, 1);
