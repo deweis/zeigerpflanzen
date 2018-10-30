@@ -65,7 +65,7 @@ const plants = [
       'https://upload.wikimedia.org/wikipedia/commons/2/26/Amaranthus_retroflexus_full1.jpg',
     url: 'https://de.wikipedia.org/wiki/Zur%C3%BCckgebogener_Amarant',
     desc:
-      'Der Zurückgebogene Amarant (Amaranthus retroflexus), auch Zurückgekrümmter Fuchsschwanz oder Rauhaariger Amarant genannt, ist eine Pflanzenart innerhalb der Familie der Fuchsschwanzgewächse (Amaranthaceae). Er ist in Mitteleuropa ein häufiges, wärmeliebendes „Unkraut“ in Mais- und Zuckerrübenfeldern, in Haus- und Gemüsegärten sowie in Weinbergen.'
+      'Der Zurückgebogene Amarant (Amaranthus retroflexus), auch Zurückgekrümmter Fuchsschwanz oder Rauhaariger Amarant genannt, ist eine Pflanzenart innerhalb der Familie der Fuchsschwanzgewächse (Amaranthaceae). Er ist in Mitteleuropa ein häufiges, wärmeliebendes „Unkraut“ in Mais- und Zuckerrübenfeldern, in Haus- und Gemüsegärten sowie in Weinbergen oder an an Wegrändern.'
   },
   {
     name: 'Gemeiner Odermenning',
@@ -76,7 +76,7 @@ const plants = [
       'https://de.wikipedia.org/wiki/Gemeiner_Odermennig#/media/File:Agrimonia_eupatoria_04.jpg',
     url: 'https://de.wikipedia.org/wiki/Gemeiner_Odermennig',
     desc:
-      'Der Gewöhnliche Odermennig (Agrimonia eupatoria), auch Gemeiner Odermennig, Ackerkraut oder Kleiner Odermennig genannt, ist eine Pflanzenart in der Unterfamilie der Rosoideae innerhalb der Familie der Rosengewächse (Rosaceae). Sie ist in Eurasien weitverbreitet.'
+      'Der Gewöhnliche Odermennig (Agrimonia eupatoria), auch Gemeiner Odermennig, Ackerkraut oder Kleiner Odermennig genannt, ist eine Pflanzenart in der Unterfamilie der Rosoideae innerhalb der Familie der Rosengewächse (Rosaceae). Er wächst gerne auf besonnten Magerwiesen und Waldrändern von den Ebenen bis in die mittleren Gebirgslagen. Der Gemeine Odermennig verträgt keine sauren Böden und nur wenig Schatten.'
   },
   {
     name: 'Acker-Gauchheil',
@@ -87,7 +87,7 @@ const plants = [
       'https://upload.wikimedia.org/wikipedia/commons/1/15/AnagallisArvensis.jpg',
     url: 'https://de.wikipedia.org/wiki/Acker-Gauchheil',
     desc:
-      'Der Acker-Gauchheil (Anagallis arvensis), auch Roter Gauchheil, Nebelpflanze, Weinbergsstern oder Wetterkraut genannt, ist eine Pflanzenart aus der Gattung Gauchheil (Anagallis) in der Unterfamilie der Myrsinengewächse (Myrsinaoideae) innerhalb der Familie der Primelgewächse (Primulaceae). Er gilt im Ackerbau als Unkraut, weil er schwach giftig in all seinen Teilen ist, vor allem in der Wurzel.'
+      'Der Acker-Gauchheil (Anagallis arvensis), auch Roter Gauchheil, Nebelpflanze, Weinbergsstern oder Wetterkraut genannt, ist eine Pflanzenart aus der Gattung Gauchheil (Anagallis) in der Unterfamilie der Myrsinengewächse (Myrsinaoideae) innerhalb der Familie der Primelgewächse (Primulaceae). Er gilt im Ackerbau als Unkraut, weil er schwach giftig in all seinen Teilen ist, vor allem in der Wurzel. Die Pflanze ist aus Europa weltweit von Menschen verschleppt worden, und ist eine verbreitete, häufige Pflanze, die auf Äckern, in Gärten, Weinbergen sowie auf Schuttplätzen und an ähnlichen Ruderalstandorten vorkommt. In den letzten Jahrzehnten tritt der Acker-Gauchheil auch am Rand salzgestreuter Straßen oder Autobahnen auf. Er bildet dann am Asphaltrand ein breites rotes Band. Er wächst vor allem in leichter Erde, wird aber auch in Tonboden angetroffen.'
   },
   {
     name: 'Salz-Aster',
@@ -98,7 +98,7 @@ const plants = [
       'https://upload.wikimedia.org/wikipedia/commons/d/d1/Strandasters.jpg',
     url: 'https://de.wikipedia.org/wiki/Strand-Aster',
     desc:
-      'Die Strand-Aster (Tripolium pannonicum, Syn.: Aster tripolium L.), auch Salz-Aster und Pannonien-Salzaster genannt, ist eine Pflanzenart in der Familie der Korbblütler (Asteraceae). Sie gehört zu den sehr auffälligen Pflanzenarten auf Salzböden.'
+      'Die Strand-Aster (Tripolium pannonicum, Syn.: Aster tripolium L.), auch Salz-Aster und Pannonien-Salzaster genannt, ist eine Pflanzenart in der Familie der Korbblütler (Asteraceae). Sie gehört zu den sehr auffälligen Pflanzenarten auf Salzböden. Die Strand-Aster ist eine Salzpflanze. Sie wächst primär auf nassen oder periodisch überfluteten Salzwiesen.'
   },
   {
     name: 'Kanadisches Berufskraut',
@@ -109,18 +109,18 @@ const plants = [
       'https://de.wikipedia.org/wiki/Kanadisches_Berufkraut#/media/File:Conyza_canadense_002.JPG',
     url: 'https://de.wikipedia.org/wiki/Kanadisches_Berufkraut',
     desc:
-      'Das Kanadische Berufkraut (Conyza canadensis), auch Katzenschweif und Weiße Dürrwurz genannt, ist eine Pflanzenart aus der Familie der Korbblütler (Asteraceae). Es wird auch oft unter dem wissenschaftlichen Namen Erigeron canadensis der Gattung Erigeron geführt.'
+      'Das Kanadische Berufkraut (Conyza canadensis), auch Katzenschweif und Weiße Dürrwurz genannt, ist eine Pflanzenart aus der Familie der Korbblütler (Asteraceae). Es wird auch oft unter dem wissenschaftlichen Namen Erigeron canadensis der Gattung Erigeron geführt. Das Kanadische Berufkraut kommt allgemein verbreitet in lückigen Unkrautfluren, in Pflasterfugen, an Schuttplätzen, Wegen, Dämmen, in Äckern und Brachen oder in Schlägen oder Brandflächen des Waldes vor. Es gedeiht auf mäßig stickstoffreichen, vorzugsweise sandigen Böden. Das Kanadische Berufkraut ist eine Wärme liebende Lichtpflanze und es fehlt demgemäß in Gegenden mit rauem Klima.'
   },
   {
     name: 'Gewöhnliches Greiskraut',
     latin: 'Senecio vulgaris',
-    soil: [3, 17],
+    soil: [3, 6, 17],
     img: 'SenecioVulgaris.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Greiskraut#/media/File:20150418Senecio_vulgaris6.jpg',
     url: 'https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Greiskraut',
     desc:
-      'Das Gewöhnliche Greiskraut (Senecio vulgaris), auch Gemeines Greiskraut oder Gemeines Kreuzkraut genannt, ist eine der häufigsten Arten aus der Gattung der Greiskräuter (Senecio) innerhalb der Familie der Korbblütler (Asteraceae).'
+      'Das Gewöhnliche Greiskraut (Senecio vulgaris), auch Gemeines Greiskraut oder Gemeines Kreuzkraut genannt, ist eine der häufigsten Arten aus der Gattung der Greiskräuter (Senecio) innerhalb der Familie der Korbblütler (Asteraceae). Es gedeiht in den gemäßigten und meridionalen Gebieten Europas. Es ist fast weltweit ein Neophyt[4] und gedeiht in allen gemäßigten bis subtropischen Gebieten. Das Gewöhnliche Greiskraut ist eine typische Ruderalpflanze. Sie wächst auf frischen, nährstoffreichen, mehr oder weniger humosen, lockeren Böden aller Art wie auf Äckern, in Gärten, Weinbergen, Baustellen usw. Es ist fast überall häufig.'
   },
   {
     name: 'Adlerfarn',
@@ -131,13 +131,13 @@ const plants = [
       'https://de.wikipedia.org/wiki/Adlerfarn#/media/File:Pteridium_aquilinum_(habitus).jpg',
     url: 'https://de.wikipedia.org/wiki/Adlerfarn',
     desc:
-      'Der Adlerfarn (Pteridium aquilinum) ist ein weltweit verbreiteter, auffälliger Farn. Die Farne sind eine Gruppe von Gefäßsporenpflanzen, die die Schwestergruppe der Samenpflanzen bilden.',
+      'Der Adlerfarn (Pteridium aquilinum) ist ein weltweit verbreiteter, auffälliger Farn. Die Farne sind eine Gruppe von Gefäßsporenpflanzen, die die Schwestergruppe der Samenpflanzen bilden. Die gesamte Pflanze ist giftig, dennoch wird junger Adlerfarn regional als Salat oder Gemüse gegessen. Er wächst gerne in lichten Wäldern, an Waldrändern und von solchen Waldrändern unterirdisch in Wiesen und Weiden hinaus hohe und dichte, den Graswuchs verdrängende Bestände bildend oder in Gebüschen auf bodensaurem Untergrund. Auf nährstoffärmeren Böden kann er nach Kahlschlägen oder Waldbränden Massenbestände bilden. Auch in lichten Kiefern-Wäldern breitet er sich häufig dominierend in der Krautschicht aus. ',
     photographer: 'Hans Hillewaert'
   },
   {
     name: 'Schwarzes Bilsenkraut',
     latin: 'Hyoscyamus niger',
-    soil: [15],
+    soil: [6, 15],
     img: 'HyoscyamusNiger.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Schwarzes_Bilsenkraut#/media/File:Hyoscyamus_niger_0003.JPG',
@@ -149,13 +149,13 @@ const plants = [
   {
     name: 'Gemeiner Beifuß',
     latin: 'Artemisia vulgaris',
-    soil: [4],
+    soil: [4, 6],
     img: 'ArtemisiaVulgaris.jpg',
     imgSrc:
       'https://upload.wikimedia.org/wikipedia/commons/6/6f/ArtemisiaVulgaris.jpg',
     url: 'https://de.wikipedia.org/wiki/Beifu%C3%9F',
     desc:
-      'Der Beifuß oder Gemeine Beifuß (Artemisia vulgaris), auch Gewürzbeifuß oder Gewöhnlicher Beifuß genannt, ist eine Pflanzenart aus der Gattung Artemisia in der Familie der Korbblütler (Asteraceae, veraltet Compositae). Auf nährstoffreichen Böden, vor allem Ruderalfluren kommt der Beifuß wild vor.',
+      'Der Beifuß oder Gemeine Beifuß (Artemisia vulgaris), auch Gewürzbeifuß oder Gewöhnlicher Beifuß genannt, ist eine Pflanzenart aus der Gattung Artemisia in der Familie der Korbblütler (Asteraceae, veraltet Compositae). Er ist ein typisches "Hackfrucht-Unkraut" und verbreitete sich vermutlich zusammen mit dem neolithischen Ackerbau. Auf nährstoffreichen Böden, vor allem Ruderalfluren kommt der Beifuß wild vor.',
     photographer: 'Christian Fischer'
   },
   {
@@ -182,10 +182,10 @@ const plants = [
       'Die Gewöhnliche Vogelmiere (Stellaria media), auch Vogel-Sternmiere, Hühnerdarm, Hühnerscherbe oder Hustdarm genannt, ist eine Pflanzenart der Familie der Nelkengewächse (Caryophyllaceae). Das weit verbreitete „Unkraut“ kann als Wildgemüse und Heilpflanze verwendet werden. Sie bevorzugt feuchte, nährstoffreiche Böden, die auch im Schatten liegen können. Verbreitet ist sie von der Ebene bis ins Gebirge. Nach Ellenberg ist sie ein Schwachsäure- bis Schwachbasenzeiger, ein ausgesprochener Stickstoffzeiger und eine Ordnungscharakterart nährstoffreicher Acker- und Garten-Beikrautfluren (Polygono-Chenopodietalia)',
     photographer: 'André Karwath'
   },
-  {
+  /*{
     name: 'Huflattich',
     latin: 'Tussilago farfara',
-    soil: [2, 12, 14],
+    soil: [12, 14],
     img: 'TussilagoFarfara.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Huflattich#/media/File:Coltsfoot.jpg',
@@ -193,7 +193,7 @@ const plants = [
     desc:
       'Der Huflattich (Tussilago farfara) ist die einzige Pflanzenart der Gattung Tussilago aus der Familie der Korbblütler (Asteraceae). Er gehört zu den ersten Frühjahrsblumen, deren Blüten vor der Entwicklung der Laubblätter erscheinen. Der Huflattich war in Deutschland die Heilpflanze des Jahres 1994. Er ist auch bekannt unter den Namen Breit-, Brust- oder Eselslattich, Latten, Lette, Ackerlatsche, Kuhfladen, Esels- oder Rosshuf, Eselstappe, Fohlenfuß und Hufblatt. Er besiedelt trocken-warme Standorte auf durchlässigen Böden. Daher tritt der Huflattich oft auf Dämmen, in Steinbrüchen und an unbefestigten Wegen auf.',
     photographer: 'Andreas Trepte'
-  },
+  },*/
   {
     name: 'Wilde Möhre',
     latin: 'Daucus carota',
@@ -209,13 +209,13 @@ const plants = [
   {
     name: 'Gewöhnliche Goldrute',
     latin: 'Solidago virgaurea',
-    soil: [2, 11],
+    soil: [11],
     img: 'SolidagoVirgaurea.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Goldrute#/media/File:Solidago_virgaurea09.jpg',
     url: 'https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Goldrute',
     desc:
-      'Die Gewöhnliche Goldrute (Solidago virgaurea), auch Gemeine Goldrute oder Echte Goldrute genannt, ist eine Pflanzenart aus der Gattung der Goldruten (Solidago) innerhalb der Familie der Korbblütler (Asteraceae).',
+      'Die Gewöhnliche Goldrute (Solidago virgaurea), auch Gemeine Goldrute oder Echte Goldrute genannt, ist eine Pflanzenart aus der Gattung der Goldruten (Solidago) innerhalb der Familie der Korbblütler (Asteraceae). Die Gewöhnliche Goldrute wächst an eher trockenen, nährstoffärmeren Standorten wie in lichten Laubwäldern, an trockenen Wald-, Gebüsch- oder Wegrändern und in Magerrasen. An solchen Standorten ist sie in Mitteleuropa weit verbreitet.',
     photographer: 'Stéphane TASSON'
   },
   {
@@ -233,7 +233,7 @@ const plants = [
   {
     name: 'Acker-Hundskamille',
     latin: 'Anthemis arvensis',
-    soil: [2, 7, 13, 15],
+    soil: [14], //soil: [2, 7, 13, 15],
     img: 'AnthemisArvensis.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Acker-Hundskamille#/media/File:Anthemis_arvensis_(subsp._arvensis)_sl5.jpg',
@@ -245,7 +245,7 @@ const plants = [
   {
     name: 'Gewöhnlicher Hirtentäschen',
     latin: 'Capsella bursa pastoris',
-    soil: [11, 18],
+    soil: [6, 11, 18],
     img: 'CapsellaBursaPastoris.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel#/media/File:Hirtent%C3%A4schel_in_Trebus_2007.JPG',
@@ -257,7 +257,7 @@ const plants = [
   {
     name: 'Gewöhnlicher Erdrauch',
     latin: 'Fumaria officinalis',
-    soil: [8],
+    soil: [6, 8],
     img: 'FumariaOfficinalis.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Gew%C3%B6hnlicher_Erdrauch#/media/File:Fumaria_officinalis_003.JPG',
@@ -268,8 +268,8 @@ const plants = [
   },
   {
     name: 'Strahlenlose Kamille',
-    latin: 'Matricaria matricarioides',
-    soil: [13],
+    latin: 'Matricaria discoidea',
+    soil: [6, 12, 13],
     img: 'MatricariaMatricarioides.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Strahlenlose_Kamille#/media/File:Plant_on_puddle.jpg',
@@ -396,7 +396,7 @@ const plants = [
   {
     name: 'Löwenzahn',
     latin: 'Taraxacum officinale',
-    soil: [3, 12, 14],
+    soil: [3, 6, 12, 14],
     img: 'TaraxacumOfficinale.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Gew%C3%B6hnlicher_L%C3%B6wenzahn#/media/File:Taraxacum-officinalis-plant.jpg',
@@ -408,7 +408,7 @@ const plants = [
   {
     name: 'Kleine Brennnessel',
     latin: 'Urtica urens',
-    soil: [2, 3, 14],
+    soil: [2, 3, 6, 14],
     img: 'UrticaUrens.jpg',
     imgSrc:
       'https://en.wikipedia.org/wiki/Urtica_urens#/media/File:Urtica_urens_002.JPG',
@@ -432,13 +432,13 @@ const plants = [
   {
     name: 'Acker-Schachtelhalm',
     latin: 'Equisetum arvense',
-    soil: [2, 11],
+    soil: [2, 5, 12],
     img: 'EquisetumArvense.jpg',
     imgSrc:
       'https://en.wikipedia.org/wiki/Equisetum_arvense#/media/File:Equisetum_arvense_foliage.jpg',
     url: 'https://de.wikipedia.org/wiki/Acker-Schachtelhalm',
     desc:
-      'Der Acker-Schachtelhalm (Equisetum arvense), auch Zinnkraut, Acker-Zinnkraut, Katzenwedel, Pferdeschwanz, Schaftheu, Pfannebutzer oder Scheuerkraut genannt, ist eine Pflanzenart aus der Klasse der Schachtelhalme (Equisetopsida). Der Acker-Schachtelhalm besiedelt Äcker, lehmige feuchte Wiesenränder, Gräben und Böschungen und hat eine sehr weite, circumpolare Verbreitung auf der Nordhalbkugel. Es besteht an feuchten Standorten Verwechslungsgefahr mit dem Sumpf-Schachtelhalm (Equisetum palustre), der wegen seines Alkaloidgehaltes giftig sein soll.[9] Die Unterscheidung der beiden Arten ist von Laien etwas schwierig, zumal beide Arten an ähnlichen Standorten auftreten und sich auch vergesellschaften. Ein relativ sicheres Unterscheidungsmerkmal ist der Stängelquerschnitt.',
+      'Der Acker-Schachtelhalm (Equisetum arvense), auch Zinnkraut, Acker-Zinnkraut, Katzenwedel, Pferdeschwanz, Schaftheu, Pfannebutzer oder Scheuerkraut genannt, ist eine Pflanzenart aus der Klasse der Schachtelhalme (Equisetopsida). Der Acker-Schachtelhalm besiedelt Äcker, lehmige feuchte Wiesenränder, Gräben und Böschungen und hat eine sehr weite, circumpolare Verbreitung auf der Nordhalbkugel. Es besteht an feuchten Standorten Verwechslungsgefahr mit dem Sumpf-Schachtelhalm (Equisetum palustre), der wegen seines Alkaloidgehaltes giftig sein soll. Die Unterscheidung der beiden Arten ist von Laien etwas schwierig, zumal beide Arten an ähnlichen Standorten auftreten und sich auch vergesellschaften. Ein relativ sicheres Unterscheidungsmerkmal ist der Stängelquerschnitt.',
     photographer: 'MPF'
   },
   {
@@ -839,3 +839,5 @@ showPlants();
 const myLazyLoad = new LazyLoad({
   elements_selector: '.lazy'
 });
+
+window.scrollTo(0, 1);
