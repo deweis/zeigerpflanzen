@@ -749,7 +749,7 @@ function showPlants() {
     card.setAttribute('id', `${plants[i].latin}`);
     card.innerHTML = `
             <div class="card">
-              <a href="${plants[i].url}" target="_blank">
+              <a href="${plants[i].url}" target="_blank" rel="noopener">
                 <img class="card-img-top lazy" data-src="img/500x500/${
                   plants[i].img
                 }" alt="${plants[i].name}">
