@@ -39,7 +39,13 @@ self.addEventListener('fetch', function(event) {
           // if there we return the request (from the cache)
           return response;
         } else {
-          return fetch(event.request); // else we fetch the data. I.e. continue with the network request.
+          return fetch(event.request) // else we fetch the data. I.e. continue with the network request.
+            .then(function(res) {
+              return caches.open('sw-dynamic').then(function(cache) {
+                cache.put(event.request.url, res.clone()); // clone as res can only be used once
+                return res;
+              });
+            });
         }
       })
   );
