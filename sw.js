@@ -1,7 +1,7 @@
 self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
   event.waitUntil(
-    caches.open('sw-static').then(function(cache) {
+    caches.open('sw-static-v2').then(function(cache) {
       /*
       Cache the app shell: The application shell is the frame of the
       application, I.e. the core of the app. Means, the static content like
@@ -25,6 +25,24 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('activate', function(event) {
   console.log('[Service Worker] Activating Service Worker ...', event);
+
+  /* Cleanup the caches - I.e. every app version change goes into a new cache so the old ones need to be cleaned */
+  event.waitUntil(
+    caches
+      .keys() // keys returns an array of keys of all subcaches in the cache storage
+      .then(function(keyList) {
+        // Promise.all takes an array of Promises and waits for all of them to finish
+        return Promise.all(
+          // Remove old caches
+          keyList.map(function(key) {
+            if (key !== 'sw-static-v2' && key !== 'sw-dynamic') {
+              console.log('[Service Worker] Removing old cache.', key);
+              return caches.delete(key);
+            }
+          })
+        );
+      })
+  );
   return self.clients.claim(); // Ensures that sw is loaded correctly
 });
 
