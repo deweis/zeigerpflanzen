@@ -45,7 +45,8 @@ self.addEventListener('fetch', function(event) {
                 cache.put(event.request.url, res.clone()); // clone as res can only be used once
                 return res;
               });
-            });
+            })
+            .catch(function(err) {});
         }
       })
   );
