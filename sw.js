@@ -1,6 +1,6 @@
 /* Cache Management - Cache versions to be changed on file change
    Not needed if sw.js changes as being updated automatically on change */
-const CACHE_STATIC = 'sw-static-v3'; // Adjust when static files changed
+const CACHE_STATIC = 'sw-static-v5'; // Adjust when static files changed
 const CACHE_DYNAMIC = 'sw-dynamic-v2'; // Adjust when dynamic files changed
 
 /**********************************************************/
