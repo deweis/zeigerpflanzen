@@ -1,26 +1,26 @@
 /**
  * The Service Worker
  * local - with a different url to register - comment when pubhlishing
- */
+ 
 
 if ('serviceWorker' in navigator) {
   // Check if the service worker feature is available in the browser in use
   navigator.serviceWorker.register('/sw.js').then(function() {
     console.log('Service Worker registered');
   });
-}
+}*/
 
 /**
  * The Service Worker
  * online - with a different url to register - uncomment when publishing
- 
+ */
 
 if ('serviceWorker' in navigator) {
   // Check if the service worker feature is available in the browser in use
   navigator.serviceWorker.register('/zeigerpflanzen/sw.js').then(function() {
     console.log('Service Worker registered');
   });
-}*/
+}
 
 /**
  * The Plant and soil info objects
@@ -173,7 +173,7 @@ const plants = [
   {
     name: 'Gewöhnliche Vogelmiere',
     latin: 'Stellaria media',
-    soil: [3, 17],
+    soil: [3, 6, 17],
     img: 'StellariaMedia.jpg',
     imgSrc:
       'https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Vogelmiere#/media/File:Chickweed_(aka).jpg',
