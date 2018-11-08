@@ -1,7 +1,15 @@
+/* Cache Management - Cache versions to be changed on file change
+   Not needed if sw.js changes as being updated automatically on change */
+const CACHE_STATIC = 'sw-static-v3'; // Adjust when static files changed
+const CACHE_DYNAMIC = 'sw-dynamic-v2'; // Adjust when dynamic files changed
+
+/**********************************************************/
+/* Events triggered by the browser during SW installation */
+/**********************************************************/
 self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
   event.waitUntil(
-    caches.open('sw-static-v2').then(function(cache) {
+    caches.open(CACHE_STATIC).then(function(cache) {
       /*
       Cache the app shell: The application shell is the frame of the
       application, I.e. the core of the app. Means, the static content like
@@ -35,7 +43,7 @@ self.addEventListener('activate', function(event) {
         return Promise.all(
           // Remove old caches
           keyList.map(function(key) {
-            if (key !== 'sw-static-v2' && key !== 'sw-dynamic') {
+            if (key !== CACHE_STATIC && key !== CACHE_DYNAMIC) {
               console.log('[Service Worker] Removing old cache.', key);
               return caches.delete(key);
             }
@@ -46,6 +54,9 @@ self.addEventListener('activate', function(event) {
   return self.clients.claim(); // Ensures that sw is loaded correctly
 });
 
+/**********************************************************/
+/* Handle Fetch events                                    */
+/**********************************************************/
 self.addEventListener('fetch', function(event) {
   console.log('[Service Worker] Fetching data ...', event);
   /* event.respondWith allows us to overwrite the data which gets sent back */
@@ -59,7 +70,7 @@ self.addEventListener('fetch', function(event) {
         } else {
           return fetch(event.request) // else we fetch the data. I.e. continue with the network request.
             .then(function(res) {
-              return caches.open('sw-dynamic').then(function(cache) {
+              return caches.open(CACHE_DYNAMIC).then(function(cache) {
                 cache.put(event.request.url, res.clone()); // clone as res can only be used once
                 return res;
               });
