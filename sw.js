@@ -1,10 +1,11 @@
 /* Cache Management - Cache versions to be changed on file change
    Not needed if sw.js changes as being updated automatically on change */
-const CACHE_STATIC = 'sw-static-v6'; // Adjust when static files changed
+const CACHE_STATIC = 'sw-static-v9'; // Adjust when static files changed
 const CACHE_DYNAMIC = 'sw-dynamic-v3'; // Adjust when dynamic files changed
 const APP_SHELL = [
   '/zeigerpflanzen/',
   '/zeigerpflanzen/index.html',
+  '/zeigerpflanzen/plants.js',
   '/zeigerpflanzen/script.js',
   '/zeigerpflanzen/styles.css',
   'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
